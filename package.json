@@ -4,14 +4,15 @@
   "description": "dtx api teste",
   "main": "index.js",
   "scripts": {
-    "test": "export MONGO_HOST=mongodb://user:password@ds036967.mlab.com:36967/dtx && node_modules/.bin/mocha './test/**/*.spec.js'",
-    "coverage": "export MONGO_HOST=mongodb://user:password@ds036967.mlab.com:36967/dtx && istanbul cover node_modules/.bin/_mocha -- -- -u exports -R spec test/**/*",
+    "test": "export MONGO_HOST=mongodb://[YOUR_HOST] && node_modules/.bin/mocha './test/**/*.spec.js'",
+    "coverage": "export MONGO_HOST=mongodb://[YOUR_HOST] && istanbul cover node_modules/.bin/_mocha -- -- -u exports -R spec test/**/*",
     "seed": " node ./database/run.js",
     "dev": "nodemon ./index.js",
     "start": "node server.js",
     "devx": "nodemon ./index.js"
   },
   "author": "Carlos Rodrigues",
+  "co-author": "Ramde Amazonas Costa",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.3.0",

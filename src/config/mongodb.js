@@ -1,5 +1,5 @@
 var port = process.env.MONGO_PORT || 27017;
-var uri = 'mongodb://reinaldonaville:Duratex2017@ds235775.mlab.com:35775/agenda';
+var uri = 'mongodb://[YOUR_HOST]/agenda';
 
 const options = {
     useMongoClient: true
